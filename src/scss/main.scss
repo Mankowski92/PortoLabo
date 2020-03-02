@@ -1,0 +1,11 @@
+@import "./settings/fonts";
+@import "./settings/colors";
+@import "./reset";
+
+body{
+  font-family: $font-base;
+  width: 20vh;
+  height: 20vh;
+}
+
+
