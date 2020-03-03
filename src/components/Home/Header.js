@@ -6,7 +6,13 @@ const Header = () => {
 return (
 
   <>
-    Header
+    <div className="header-container">
+      <div className="header-image"></div>
+      <div className="header-login-nav-content-container">
+        <div className="login-and-nav-container"></div>
+        <div className="header-content-container"></div>
+      </div>
+    </div>
   </>
   );
 }
