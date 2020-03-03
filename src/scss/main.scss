@@ -4,8 +4,16 @@
 
 body{
   font-family: $font-base;
-  width: 20vh;
-  height: 20vh;
+  width: 100vh;
+  height: 100vh;
 }
 
+p{
+  font-family: $font-alt;
+  font-size: 30px;
+}
 
+span{
+  font-family: $font-base;
+  font-size: 30px;
+}
