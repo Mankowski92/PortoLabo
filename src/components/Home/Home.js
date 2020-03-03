@@ -1,5 +1,6 @@
 import React from "react";
-import Header from './Header'
+import Header from "./Header"
+import ThreeColumns from "./ThreeColumns"
 
 const Home = () => {
     
@@ -7,6 +8,7 @@ return (
 
   <>
     <Header />
+    <ThreeColumns />
   </>
   );
 }
