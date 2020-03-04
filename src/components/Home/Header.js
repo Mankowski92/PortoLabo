@@ -6,11 +6,11 @@ const Header = () => {
 return (
 
   <>
-    <div className="header-container">
-      <div className="header-image"></div>
-      <div className="header-login-nav-content-container">
-        <div className="login-and-nav-container"></div>
-        <div className="header-content-container"></div>
+    <div className="header">
+      <div className="header__image"></div>
+      <div className="header__login-nav-content-container">
+        <div className="header__login-nav-container"></div>
+        <div className="header__content-container"></div>
       </div>
     </div>
   </>
