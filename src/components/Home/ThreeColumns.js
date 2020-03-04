@@ -7,7 +7,7 @@ const ThreeColumns = () => {
 return (
 
   <>
-    three
+  
   </>
   );
 }
