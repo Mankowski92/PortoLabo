@@ -1,5 +1,4 @@
 .header {
-    width: 100%;
     margin-right: 7.5%;
     display: flex;
     flex-direction: row;
@@ -15,9 +14,35 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+        font-size: 1.8rem;
         .header__login-nav-container{
+                display: flex;
+                flex-direction: column;
+            .header__login{
+                display: flex;
+                justify-content: space-around;
+            }
+            .header__nav{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .header__content-container{
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            .header__sloganbox{
+                font-size: 3.8rem;
+            }
+            .header__decorationbox{
+                display: flex;
+            }
+            .header__buttons-section{
+                font-size: 36px;
+                font-weight: 400;
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }
