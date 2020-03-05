@@ -1,0 +1,23 @@
+.three-columns{
+    height: 29vh;
+    background-image: url(../../assets/3-Columns-Background.png);
+    display: flex;
+    justify-content: space-around;
+    .three-columns__column-container{
+        display: flex;
+        flex-direction: column;
+        .column-container__numberbox{
+            color: #5E5322;
+            font-size: 9rem;
+            font-weight: 300;
+        }
+        .column-container__description{
+            color: #3C3C3C;
+            font-size: 1.8rem;
+        }
+        .column-container__text{
+            color: #3C3C3C;
+            font-size: 1.6rem;
+        }
+    }
+}
