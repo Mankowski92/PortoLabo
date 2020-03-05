@@ -1,0 +1,33 @@
+.four-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    .four-steps__title{
+        color: #3C3C3C;
+        font-size: 3.8rem;
+    }
+    .four-steps__decorationbox{
+        display: flex;
+        background-image: url(../../assets/Decoration.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 15%;
+        height: 12%;
+        margin: 3rem 0;
+    }
+}
+.four-steps__background-for-step-by-step{
+    background-color: #F0F1F1;
+    width: 100%;
+    .four-steps__step-by-step-container{
+        color: #3C3C3C;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 23.5%;
+    }
+}
+
+//17.6 % na button width
