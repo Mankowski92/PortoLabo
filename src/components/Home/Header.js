@@ -28,7 +28,6 @@ return (
             <span>Oddaj niechciane rzeczy w zaufane ręce</span>
           </div>
           <div className="header__decorationbox">
-          <img src="../../assets/Decoration.svg" alt="decoration"/>
           </div>
           <div className="header__buttons-section">
             <div>

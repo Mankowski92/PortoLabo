@@ -6,6 +6,8 @@
     .three-columns__column-container{
         display: flex;
         flex-direction: column;
+        text-align: center;
+        margin: 0 9.3% 0 9.3%;
         .column-container__numberbox{
             color: #5E5322;
             font-size: 9rem;
