@@ -12,7 +12,7 @@ return (
             <div className="four-steps__background-for-step-by-step">
             <div className="four-steps__step-by-step-container">
                 <div className="step-by-step-container__each-step-container">
-                    <div className="each-step-container__graphic">
+                    <div className="each-step-container__graphic each-step-container__graphic--graph1">
                         
                     </div>
                     <div className="each-step-container__action-title">
@@ -23,7 +23,7 @@ return (
                     </div>
                 </div>
                 <div className="step-by-step-container__each-step-container">
-                    <div className="each-step-container__graphic">
+                    <div className="each-step-container__graphic each-step-container__graphic--graph2">
                         
                     </div>
                     <div className="each-step-container__action-title">
@@ -34,7 +34,7 @@ return (
                     </div>
                 </div>
                 <div className="step-by-step-container__each-step-container">
-                    <div className="each-step-container__graphic">
+                    <div className="each-step-container__graphic each-step-container__graphic--graph3">
                         
                     </div>
                     <div className="each-step-container__action-title">
@@ -45,7 +45,7 @@ return (
                     </div>
                 </div>
                 <div className="step-by-step-container__each-step-container">
-                    <div className="each-step-container__graphic">
+                    <div className="each-step-container__graphic each-step-container__graphic--graph4">
                         
                     </div>
                     <div className="each-step-container__action-title">
@@ -65,3 +65,6 @@ return (
 }
 
 export default FourSteps
+
+//<div className="four-steps__title">Wystarczą 4 proste kroki</div>
+//<div className="four-steps__decorationbox"></div>
