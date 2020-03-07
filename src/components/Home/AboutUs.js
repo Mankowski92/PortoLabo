@@ -1,11 +1,21 @@
 import React from "react";
 
 
-
 const AboutUs = () => {
     
 return (
     <>
+        <div className="about-us-section">
+            <div className="about-us-container__exterior-container">
+                <div className="about-us-container__about-content">
+                    <div className="about-content__title"></div>
+                    <div className="about-content__decoration"></div>
+                    <div className="about-content_text"></div>
+                    <div className="about-content__signature"></div>
+                </div>
+            </div>
+            <div className="about-us-section__picture-container"></div>
+        </div>
     </>
 );
 }
