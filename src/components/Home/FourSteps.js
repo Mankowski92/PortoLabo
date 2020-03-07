@@ -53,11 +53,11 @@ return (
                     </div>
                     <div className="each-step-container__action-description">
                         kurier przyjedzie w dogodnym terminie
-                    </div>     
+                    </div>   
                 </div>
             </div>
         </div>  
-        <div className="four-steps__button"></div>    
+        <div className="four-steps__button">TU BĘDZIE BUTTON Z COMPONENTU</div>    
     </div>
 </div>
   
