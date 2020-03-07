@@ -8,9 +8,12 @@ return (
         <div className="about-us-section">
             <div className="about-us-container__exterior-container">
                 <div className="about-us-container__about-content">
-                    <div className="about-content__title"></div>
+                    <div className="about-content__title">O nas</div>
                     <div className="about-content__decoration"></div>
-                    <div className="about-content_text"></div>
+                    <div className="about-content_text">
+                    Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. 
+                    Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.
+                    </div>
                     <div className="about-content__signature"></div>
                 </div>
             </div>
