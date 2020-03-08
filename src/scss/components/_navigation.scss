@@ -1,0 +1,36 @@
+
+.Navigation-component-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .Navigation__section-div{
+        width: 50%;
+    }
+    .header__login-nav-container{
+        margin-right: 7.5%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.5rem;
+        width: 50%;
+        margin-left: 10.8%;
+        font-size: 1.8rem;
+        .header__login-section{
+            display: flex;
+            justify-content: flex-end;
+            color: #737373;
+            span{
+                padding: 10px
+                }
+                .login-section__button--make-account{
+                    margin-left: 1rem;
+                    border: 1px solid #FAD648
+                }
+        }
+        .header__nav{
+            display: flex;
+            justify-content: space-between;
+            color: #3C3C3C;
+            margin-top: 2.6rem;
+        }
+    }
+}       

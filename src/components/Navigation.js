@@ -5,6 +5,7 @@ const Navigation = () => {
     
 return (
     <div className="Navigation-component-container">
+        <div className="Navigation__section-div"></div>
         <div className="header__login-nav-container">
             <div className="header__login-section">
                 <span>Zaloguj</span>
