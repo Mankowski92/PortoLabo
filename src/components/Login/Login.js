@@ -1,12 +1,12 @@
 import React from "react";
-// import XXX from "./XXX"
+import Navigation from "../Navigation";
 
 const Login = () => {
     
 return (
 
   <>
-    {/* <xxx /> */}
+    <Navigation />
   </>
   );
 }
