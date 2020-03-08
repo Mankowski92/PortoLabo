@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 
 const Header = () => {
     
@@ -11,7 +11,7 @@ return (
       <div className="header__login-nav-content-container">
         <div className="header__login-nav-container">
           <div className="header__login-section">
-            <span>Zaloguj</span>
+          <Link to="/login"><span>Zaloguj</span></Link>
             <span className="login-section__button--make-account">Załóż konto</span>
           </div>
           <div className="header__nav">

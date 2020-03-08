@@ -1,5 +1,5 @@
 import React from "react";
-// import Header from "../Home/Header";
+import {Link} from "react-router-dom";
 
 const Navigation = () => {
     
@@ -8,7 +8,7 @@ return (
         <div className="Navigation__section-div"></div>
         <div className="header__login-nav-container">
             <div className="header__login-section">
-                <span>Zaloguj</span>
+                <Link to="/login"><span>Zaloguj</span></Link>
                 <span className="login-section__button--make-account">Załóż konto</span>
             </div>
             <div className="header__nav">
