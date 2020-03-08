@@ -1,3 +1,3 @@
-import XYZ from './Login';
+import Login from './Login';
 
-export default XYZ;
+export default Login;
