@@ -8,7 +8,7 @@ return (
 
   <>
     <Navigation />
-    <Link to="/"><span>DUPSKO</span></Link>
+    <Link to="/"><span class="test">DUPSKO</span></Link>
   </>
   );
 }
