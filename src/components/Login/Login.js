@@ -10,12 +10,15 @@ return (
     <Navigation />
     <div className="login-container__login-section">
       <div className="login-section__login-text">Zaloguj się</div>
-      <div className="login-section__decoration-box">IMG BACKGROUND HERE</div>
+      <div className="login-section__decoration-box"></div>
       <div className="login-section__email-password-container">
         <div className="email-password-container__email">Email</div>
         <div className="email-password-container__password">Hasło</div>
       </div>  
-      <div className="login-section__buttons-section"></div>
+      <div className="login-section__buttons-section">
+        <span>Załóż konto</span>
+        <span>Zaloguj się</span>
+      </div>
     </div>
   </div>
   );
