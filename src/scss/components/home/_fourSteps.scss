@@ -12,7 +12,7 @@
     }
     .four-steps__decorationbox{
         display: flex;
-        background-image: url(../../assets/Decoration.svg);
+        background-image: url(../../../assets/Decoration.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -36,17 +36,17 @@
                 flex-direction: column;
                 margin: 7.5rem 4rem;
                 .each-step-container__graphic--graph1{
-                    background-image: url(../../assets/Icon-1.svg);
+                    background-image: url(../../../assets/Icon-1.svg);
 
                 }
                 .each-step-container__graphic--graph2{
-                    background-image: url(../../assets/Icon-2.svg);
+                    background-image: url(../../../assets/Icon-2.svg);
                 }
                 .each-step-container__graphic--graph3{
-                    background-image: url(../../assets/Icon-3.svg);
+                    background-image: url(../../../assets/Icon-3.svg);
                 }
                 .each-step-container__graphic--graph4{
-                    background-image: url(../../assets/Icon-4.svg);
+                    background-image: url(../../../assets/Icon-4.svg);
                 }
                 .each-step-container__graphic{
                     background-repeat: no-repeat;

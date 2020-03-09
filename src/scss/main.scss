@@ -1,11 +1,12 @@
 @import "./settings/fonts";
 @import "./settings/colors";
 @import "./reset";
-@import "../components/header";
-@import "../components/threeColumns";
-@import "../components/fourSteps";
-@import "../components/aboutUs";
-@import "../components/navigation";
+@import "./components/home/header";
+@import "./components/home/threeColumns";
+@import "./components/home/fourSteps";
+@import "./components/home/aboutUs";
+@import "./components/navigation";
+@import "./components/login/login";
 
 html{
   font-size: 10px;

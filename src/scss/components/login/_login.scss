@@ -1,0 +1,13 @@
+.login-container{
+    margin-right: 7.5%;
+    .login-container__login-section{
+        display: flex;
+        flex-direction: column;
+        .login-section__login-text{
+            font-size: 30px;
+        }
+        .login-section__decoration-box{
+            font-size: 30px;
+        }
+    }
+}
