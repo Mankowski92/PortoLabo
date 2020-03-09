@@ -3,11 +3,23 @@
     .login-container__login-section{
         display: flex;
         flex-direction: column;
+        justify-content: right;
         .login-section__login-text{
-            font-size: 30px;
+            font-size: 4rem;
+            letter-spacing: -0.8px;
+            line-height: 5.5rem;
         }
         .login-section__decoration-box{
             font-size: 30px;
         }
+        .login-section__email-password-container{
+            background-color: #F0F1F1;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+        }
+        .login-section__buttons-section{
+            font-size: 30px;
+        }
     }
-}
+}    
