@@ -9,10 +9,13 @@ return (
             <div className="contact__container">
                 <div className="contact__title">Skontaktuj się z nami</div>
                 <div className="contact_decoration-box"></div>
-                <div className="contact__name-and-email"></div>
-                <div className="contact__message"></div>
-                <div className="button_button"></div>
+                <div className="contact__form">
+                    <div className="form__name-and-email"></div>
+                    <div className="form__message"></div>
+                    <div className="form__button"></div>
+                </div>
             </div>
+            <div className="contact__over"></div>
         </div>
     </>
 );
