@@ -1,3 +1,5 @@
+The repository is built mainly using the React library. Styling is provided in SASS. This project is in continuous intensive construction.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
