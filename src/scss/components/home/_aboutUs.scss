@@ -16,7 +16,7 @@
             align-items: center;
             justify-content: center;
             .about-content__title{
-                color:#3C3C3C;
+                color: $dark-font-color;
                 font-size: 3rem;
                 letter-spacing: -0.76px;
                 padding-bottom: 2%;
@@ -31,7 +31,7 @@
             }
             .about-content_text{
                 text-align: center;
-                color: #3C3C3C;
+                color: $dark-font-color;
                 letter-spacing: -0.6px;
                 font-size: 2rem;
                 line-height: 4.4rem;

@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     .four-steps__title{
-        color: #3C3C3C;
+        color: $dark-font-color;
         font-size: 3.8rem;
         letter-spacing: -0.76px;
         margin-top: 5.5rem;
@@ -24,7 +24,7 @@
         background-color: #F0F1F1;
         width: 100%;
         .four-steps__step-by-step-container{
-            color: #3C3C3C;
+            color: $dark-font-color;
             font-size: 1.8rem;
             display: flex;
             justify-content: space-around;
@@ -66,7 +66,7 @@
     .four-steps__button{
         margin-top: 4rem;
         margin-bottom: 9rem;
-        color: #3C3C3C;
+        color: $dark-font-color;
         font-size: 36px;
         font-weight: 300;
     }

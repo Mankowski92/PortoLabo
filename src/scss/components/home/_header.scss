@@ -36,7 +36,7 @@
             .header__nav{
                 display: flex;
                 justify-content: space-between;
-                color: #3C3C3C;
+                color: $dark-font-color;
                 margin-top: 2.6rem;
             }
         }
@@ -50,7 +50,7 @@
             margin: 0 7.6% 0 3.75%;
             .header__sloganbox{
                 font-size: 3.5rem;
-                color: #3C3C3C;
+                color: $dark-font-color;
                 text-align: center;
                 span{
                     display: block;
@@ -71,8 +71,8 @@
                 flex-direction: row;
                 div{
                     font-weight: 300;
-                    color: #3C3C3C;
-                    border: 0.75px solid #3C3C3C;
+                    color: $dark-font-color;
+                    border: 0.75px solid $dark-font-color;
                     text-align: center;
                     width: 30rem;
                     margin: 2.2rem;

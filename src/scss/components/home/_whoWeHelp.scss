@@ -1,0 +1,12 @@
+.who-we-help-container{
+    width: 70%;
+    margin: 7rem auto;
+    background-color: greenyellow;
+    height: 300px;
+    .who-we-help__title{
+        color: $dark-font-color;
+        font-size: 38px;
+        line-height: 55px;
+        letter-spacing: -0.76px;
+    }
+}
