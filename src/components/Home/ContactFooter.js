@@ -5,7 +5,7 @@ const ContactFooter = () => {
     
 return (
     <>
-        <div className="contact-footer-container">
+        <div className="contact-footer-container" id="contact">
             <div className="contact__container">
                 <div className="contact__title">Skontaktuj się z nami</div>
                 <div className="contact_decoration-box"></div>

@@ -6,7 +6,7 @@ const FourSteps = () => {
 return (
 
 <div>
-    <div className="four-steps">
+    <div className="four-steps" id="steps">
         <div className="four-steps__title">Wystarczą 4 proste kroki</div>
         <div className="four-steps__decorationbox"></div>
             <div className="four-steps__background-for-step-by-step">

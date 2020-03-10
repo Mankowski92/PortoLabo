@@ -5,7 +5,7 @@ const WhoWeHelp = () => {
     
 return (
     <>
-        <div className="who-we-help-container">
+        <div className="who-we-help-container" id="fundation">
             <div className="who-we-help__title">Komu pomagamy?</div>
             <div className="who-we-help__decoration"></div>
             <div className="who-we-help__entities">
