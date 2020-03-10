@@ -26,12 +26,61 @@
             background-size: contain;
             width: 60%;
             height: 15%;
-            margin: 0 auto 0 auto;
+            margin: 0 auto 6rem auto;
         }
         .contact__form{
             width: 100%;
             height: 36%;
-            background-color: $dark-font-color;
+        }
+        .form__name-and-email__container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            span{
+                display: block;
+                width: 50%;
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+            input{
+                width: 50%;
+                outline: none;
+                margin-bottom: 4rem;
+            }
+            .form__name-and-email{
+                display: flex;
+            }
+            .form__name-and-email__inputs{
+                display: flex;
+                .form_name{
+                margin-right: 0.8rem;
+                }
+                .form_email{
+                margin-left: 0.8rem;
+                }
+            }
+        }
+        .form__message{
+            span{
+                display: block;
+                width: 50%;
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+            textarea{
+                width: 100%;
+                height: 10rem;
+            }
+        }
+        .form__button{
+            width: 15rem;
+            height: 5rem;
+            float: right;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 400;
+            border: 0.75px solid #3C3C3C;
+            padding: 1.2rem;
         }
     }
     .contact__over {

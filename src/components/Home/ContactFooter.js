@@ -10,9 +10,19 @@ return (
                 <div className="contact__title">Skontaktuj się z nami</div>
                 <div className="contact_decoration-box"></div>
                 <div className="contact__form">
-                    <div className="form__name-and-email"></div>
-                    <div className="form__message"></div>
-                    <div className="form__button"></div>
+                    <div className="form__name-and-email__container">
+                        <div className="form__name-and-email">
+                            <span>Wpisz swoje imię</span><span>Wpisz swój email</span>
+                        </div>
+                        <div className="form__name-and-email__inputs">  
+                            <input type="text" className="form_name" /><input type="text" className="form_email"/>
+                        </div>  
+                    </div>
+                    <div className="form__message">
+                        <span>Wpisz swoją wiadomość</span>
+                        <textarea></textarea>
+                    </div>
+                    <div className="form__button">Wyślij</div>
                 </div>
             </div>
             <div className="contact__over"></div>
