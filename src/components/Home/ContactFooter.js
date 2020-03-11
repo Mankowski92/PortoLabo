@@ -25,7 +25,13 @@ return (
                     <div className="form__button">Wyślij</div>
                 </div>
             </div>
-            <div className="contact__over"></div>
+            <div className="contact__over">
+                <div className="contact__social-media">
+                    <div></div>
+                    <div className="footer__copyright">Copyright by Coders Lab</div>
+                    <div className="footer__socials">IKONA IKONA</div>
+                </div>
+            </div>
         </div>
     </>
 );
