@@ -1,4 +1,5 @@
 import React from "react";
+import WhoList from "./WhoList"
 
 
 const WhoWeHelp = () => {
@@ -15,9 +16,7 @@ return (
             </div>
             <div className="who-we-help__text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</div>
             <div className="who-we-help__main-content">
-                <div>Fundation 1</div>
-                <div>Fundation 2</div>
-                <div>Fundation 3</div>
+                <WhoList />
             </div>
         </div>
     </>
