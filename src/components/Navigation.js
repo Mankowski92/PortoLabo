@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-scroll";
 
+import { Link as LinkTo } from "react-router-dom";
+
 const Navigation = () => {
     
 return (
@@ -8,18 +10,17 @@ return (
         <div className="Navigation__section-div"></div>
         <div className="header__login-nav-container">
             <div className="header__login-section">
-                <Link to="/login"><span>Zaloguj</span></Link>
+
+                <LinkTo to="/login">
+                    <span>Zaloguj</span>
+                </LinkTo>
+
                 <span className="login-section__button--make-account">Załóż konto</span>
             </div>
             <div className="header__nav">
-                <Link
-                    activeClass="active"
-                    to="start"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration= {500}
-                >Start</Link>
+                <LinkTo to="/">
+                    Start
+                </LinkTo>
 
                 <Link
                     activeClass="active"
