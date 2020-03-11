@@ -35,7 +35,7 @@ const WhoList = () => {
   return (
     <div className="test">
       
-      {data.cars[1].name}
+      {data[0].name}
       
     </div>
   )
