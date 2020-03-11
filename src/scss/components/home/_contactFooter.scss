@@ -110,8 +110,16 @@
                 color: $dark-font-color
             }
             .footer__socials{
-                
+                span{
+                    font-size: 40px;
+                }
             }
         }
       }
+}
+
+.fa-facebook-square{
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
 }
