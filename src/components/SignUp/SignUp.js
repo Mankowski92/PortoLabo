@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-const Login = () => {
+const SignUp = () => {
     
 return (
 
@@ -24,4 +24,4 @@ return (
   );
 }
 
-export default Login
+export default SignUp

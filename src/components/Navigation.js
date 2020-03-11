@@ -15,7 +15,9 @@ return (
                     <span>Zaloguj</span>
                 </LinkTo>
 
-                <span className="login-section__button--make-account">Załóż konto</span>
+                <LinkTo to="/registration">
+                    <span className="login-section__button--make-account">Załóż konto</span>
+                </LinkTo>    
             </div>
             <div className="header__nav">
                 <LinkTo to="/">
