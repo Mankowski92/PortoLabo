@@ -6,7 +6,7 @@ const WhoList = () => {
     const [data, setData] = useState(false);
 
     useEffect(() => {
-        fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247`,
+        fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247/2`,
         {
             method: "GET",
             headers: {  
@@ -23,6 +23,7 @@ const WhoList = () => {
           })
           .then(data => {
             setData(data);
+            console.log(data)
           })
           .catch(err => {
             console.error("Pojawiły się błędy - " + err.message);
@@ -35,7 +36,7 @@ const WhoList = () => {
   return (
     <div className="test">
       
-      {data[0].name}
+        
       
     </div>
   )
