@@ -1,0 +1,23 @@
+{
+  "foundations": [
+    {
+      "name": "xyz",
+      "description": "xyz",
+      "status": "xyz"
+    }
+  ],
+  "organisations": [
+    {
+      "name": "xyz",
+      "description": "xyz",
+      "status": "xyz"
+    }
+  ],
+  "local": [
+    {
+      "name": "xyz",
+      "description": "xyz",
+      "status": "xyz"
+    }
+  ]
+}
