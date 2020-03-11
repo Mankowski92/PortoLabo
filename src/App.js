@@ -3,7 +3,7 @@ import './scss/main.scss';
 import {HashRouter as Router,Switch,Route} from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn/SignIn";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Switch>
         <Route  exact path="/" component={Home}/>
         <Route  path="/login" component={Login}/>
-        <Route  path="/registration" component={SignUp}/>
+        <Route  path="/registration" component={SignIn}/>
       </Switch>
 
     </Router>
