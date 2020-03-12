@@ -36,10 +36,12 @@ const WhoList = () => {
     return <h1>Ładuje...</h1>;
   }
   return (
-    <div className="test">
-      
-        
-      
+    <div className="entity-container">
+      <div className="entity-name-and-description">
+        <div className="entity-name-and-description__name">Nazwa organizacji</div>
+        <div className="entity-name-and-description__description">Opis co tam robią</div>
+      </div>
+      <div className="entity-additional-info">dodatkowe gówna</div>
     </div>
   )
 }
