@@ -36,7 +36,7 @@ const WhoList = () => {
   return (
     <div className="test">
       
-        
+        {data[0]}
       
     </div>
   )
