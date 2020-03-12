@@ -23,6 +23,7 @@
     }
     .who-we-help__entities{
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         justify-content: center;
         font-size: 2.4rem;
@@ -46,4 +47,8 @@
         font-size: 2.8rem;
         margin-top: 6rem;
     }
+}
+
+.who-we-help__middle_entiti_div{
+    padding: 0 5rem;
 }
