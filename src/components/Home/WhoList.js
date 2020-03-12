@@ -45,27 +45,3 @@ const WhoList = () => {
 }
 
 export default WhoList
-
-// return this.state.serverresponse.map(x=> (
-//   <div>
-//       <ExampleComponent
-//           prop1={x.id}
-//           prop2={x.data}
-//           prop3={x.binary}
-//           prop4={x.label}
-
-//       />
-//     </div>
-//   ));
-
-// return (
-//   data.map(x=>(
-//   <div className="entity-container">
-//     <div className="entity-name-and-description">
-//       <div className="entity-name-and-description__name">{data.array[x].foundations[x].name}</div>
-//       <div className="entity-name-and-description__description">{data.array[x].foundations[x].description}</div>
-//     </div>
-//     <div className="entity-additional-info">{data.array[x].foundations[x].status}</div>
-//   </div>
-//   ))
-// )
