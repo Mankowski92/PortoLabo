@@ -6,7 +6,7 @@ const WhoList = () => {
     const [data, setData] = useState(false);
 
     useEffect(() => {
-        fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247/3`,
+        fetch(`https://jsonbin.io/5e69461fe835bb6a77a18247/4`,
         {
             method: "GET",
             headers: {  
@@ -38,10 +38,10 @@ const WhoList = () => {
   return (
     <div className="entity-container">
       <div className="entity-name-and-description">
-        <div className="entity-name-and-description__name">Nazwa organizacji</div>
-        <div className="entity-name-and-description__description">Opis co tam robią</div>
+        <div className="entity-name-and-description__name">{data.array[0].foundations[0].name}</div>
+        <div className="entity-name-and-description__description">{data.array[0].foundations[0].description}</div>
       </div>
-      <div className="entity-additional-info">dodatkowe gówna</div>
+      <div className="entity-additional-info">{data.array[0].foundations[0].status}</div>
     </div>
   )
 }

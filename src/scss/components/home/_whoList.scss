@@ -1,18 +1,28 @@
 .entity-container{
     font-family: $font-alt;
+    color: $dark-font-color;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #707070;
     .entity-name-and-description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     .entity-name-and-description__name{
-
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+        margin-bottom: 0.6rem;
     }
     .entity-name-and-description__description{
-        
+        font-size: 1.8rem;
+        line-height: 2.2rem;
     }
     }
     .entity-additional-info{
-
+        font-size: 1.8rem;
+        line-height: 2.2rem;
     }
 }
