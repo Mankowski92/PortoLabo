@@ -1,36 +1,19 @@
 import WhoList from "./WhoList";
 import React, {useState} from "react";
+import classnames from 'classnames'
 
 
 const WhoWeHelp = () => {
 
-const [border1, setBorder1] = useState("");
-const [border2, setBorder2] = useState("");
-const [border3, setBorder3] = useState("");
+const [fundation, setFundation] = useState(1);
 
-const styles1 = {
-        border: border1,
-        padding: "2rem"
-      };    
-const styles2 = {
-        border: border2,
-        padding: "2rem"
-      };  
-const styles3 = {
-        border: border3,
-        padding: "2rem"
-      };  
-const handleFund = () => {
-    console.log("fund")
+
+const handleFund = (e) => {
+    console.log(e.target.id)
+    setFundation(e.target.id)
 }
 
-const handleOrg = () => {
-    console.log("org")
-}
 
-const handleLocal = () => {
-    console.log("local")
-}
 
 return (
     <>
@@ -40,20 +23,17 @@ return (
             <div className="who-we-help__entities">
 
                 <div 
-                style={styles1} 
-                onMouseEnter={() => setBorder1("0.75px solid #3C3C3C")}
-                onMouseLeave={() => setBorder1("")}
+                className={classnames("btn-fund", {active: fundation==1})}
+                id="1"
                 onClick={handleFund}>Fundacjom</div>
-                <div className="who-we-help__middle_entiti_div"
-                style={styles2} 
-                onMouseEnter={() => setBorder2("0.75px solid #3C3C3C")}
-                onMouseLeave={() => setBorder2("")} 
-                onClick={handleOrg}>Organizacjom pozarządowym</div>
                 <div 
-                style={styles3} 
-                onMouseEnter={() => setBorder3("0.75px solid #3C3C3C")}
-                onMouseLeave={() => setBorder3("")} 
-                onClick={handleLocal}>Lokalnym zbiórkom</div>
+                className={classnames("btn-fund", {active: fundation==2})}
+                id="2"
+                onClick={handleFund}>Organizacjom</div>
+                <div 
+                className={classnames("btn-fund", {active: fundation==3})}
+                id="3"
+                onClick={handleFund}>Local</div>
             </div>
             <div className="who-we-help__text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</div>
             <div className="who-we-help__main-content">

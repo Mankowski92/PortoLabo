@@ -6,7 +6,7 @@ const WhoList = () => {
     const [data, setData] = useState(false);
 
     useEffect(() => {
-        fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247/5`,
+        fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247/6/`,
         {
             method: "GET",
             headers: {  
@@ -22,6 +22,7 @@ const WhoList = () => {
             }
           })
           .then(data => {
+            console.log(data)
             setData(data);
 
           })
