@@ -37,10 +37,10 @@ const WhoList = () => {
   return (
     <div className="entity-container">
       <div className="entity-name-and-description">
-        <div className="entity-name-and-description__name">{data.array[0].foundations[0].name}</div>
-        <div className="entity-name-and-description__description">{data.array[0].foundations[0].description}</div>
+        <div className="entity-name-and-description__name">empty for now</div>
+        <div className="entity-name-and-description__description">empty for now</div>
       </div>
-      <div className="entity-additional-info">{data.array[0].foundations[0].status}</div>
+      <div className="entity-additional-info">empty for now</div>
     </div>  
   )
 }
