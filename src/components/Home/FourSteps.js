@@ -59,7 +59,7 @@ return (
         </div>
         <LinkTo to="/login">
         <div className="four-steps__button">
-            <span>ODDAJ></span> <span>RZECZY</span>
+            <span>ODDAJ</span> <span>RZECZY</span>
         </div>
         </LinkTo>      
     </div>
