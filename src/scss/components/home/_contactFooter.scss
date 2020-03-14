@@ -106,20 +106,26 @@
                 margin-bottom: 2rem;
             }
             .footer__copyright{
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 color: $dark-font-color
             }
             .footer__socials{
-                span{
-                    font-size: 40px;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 2%;
+                .footer__socials__facebook{
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    background-image: url(../../../assets/facebook-square-brands.svg);
+                    background-repeat: no-repeat;
+                }
+                .footer__socials__instagram{
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    background-image: url(../../../assets/instagram-brands.svg);
+                    background-repeat: no-repeat;
                 }
             }
         }
       }
-}
-
-.fa-facebook-square{
-    height: 40px;
-    width: 40px;
-    font-size: 40px;
 }

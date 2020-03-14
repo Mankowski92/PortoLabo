@@ -2,7 +2,6 @@ import WhoList from "./WhoList";
 import React, {useState} from "react";
 import classnames from 'classnames'
 
-
 const WhoWeHelp = () => {
 
 const [fundation, setFundation] = useState(1);
@@ -13,12 +12,10 @@ const handleFund = (e) => {
     setFundation(e.target.id)
 }
 
-
-
 return (
     <>
         <div className="who-we-help-container" id="fundation">
-            <div className="who-we-help__title">Komu pomagamy?</div>
+<div className="who-we-help__title">Komu pomagamy?</div>
             <div className="who-we-help__decoration"></div>
             <div className="who-we-help__entities">
 
@@ -45,25 +42,3 @@ return (
 }
 
 export default WhoWeHelp
-
-
-// function App() {
-//     const [color, setColor] = React.useState("");
-//     const styles = {
-//       "text-align": "center",
-//       padding: "30px",
-//       color: color
-//     };
-  
-//     return (
-//       <div className="middle">
-//         <div
-//           id="cspace"
-//           style={styles}
-//           onMouseEnter={() => setColor("green")}
-//           onMouseLeave={() => setColor("")}
-//         >
-//           <h1>Hello World</h1>
-//         </div>
-//       </div>
-//     );

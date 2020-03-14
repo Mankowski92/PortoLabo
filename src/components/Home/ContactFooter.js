@@ -29,7 +29,10 @@ return (
                 <div className="contact__social-media">
                     <div></div>
                     <div className="footer__copyright">Copyright by Coders Lab</div>
-                    <div className="footer__socials"></div>
+                    <div className="footer__socials">
+                        <div className="footer__socials__facebook"></div>
+                        <div className="footer__socials__instagram"></div>
+                    </div>
                 </div>
             </div>
         </div>
