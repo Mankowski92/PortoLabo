@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link as LinkTo } from "react-router-dom";
 
 const FourSteps = () => {
     
@@ -56,15 +56,18 @@ return (
                     </div>   
                 </div>
             </div>
-        </div>  
-        <div className="four-steps__button">TU BĘDZIE BUTTON Z COMPONENTU</div>    
+        </div>
+        <LinkTo to="/login">
+        <div className="four-steps__button">
+            <span>ODDAJ></span> <span>RZECZY</span>
+        </div>
+        </LinkTo>      
     </div>
 </div>
   
   );
 }
 
-export default FourSteps
 
-//<div className="four-steps__title">Wystarczą 4 proste kroki</div>
-//<div className="four-steps__decorationbox"></div>
+
+export default FourSteps
