@@ -42,15 +42,19 @@
                 font-size: 1.6rem;
                 font-weight: 600;
             }
-            input{
-                width: 50%;
-                outline: none;
-                margin-bottom: 4rem;
-            }
             .form__name-and-email{
                 display: flex;
             }
             .form__name-and-email__inputs{
+                input{
+                    width: 50%;
+                    outline: none;
+                    margin-bottom: 4rem;
+                    border: none;
+                    border-bottom: 1px solid #707070;
+                    padding: 1.2rem 0 0.5rem 0;
+                    font-size: 1.8rem;
+                }
                 display: flex;
                 .form_name{
                 margin-right: 0.8rem;

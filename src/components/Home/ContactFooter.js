@@ -21,7 +21,7 @@ return (
                     </div>
                     <div className="form__message">
                         <span>Wpisz swoją wiadomość</span>
-                        <textarea></textarea>
+                        <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
                     </div>
                     <div className="form__button">Wyślij</div>
                 </form>
