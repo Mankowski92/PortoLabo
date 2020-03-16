@@ -2,7 +2,20 @@ import React from "react";
 
 
 const ContactFooter = () => {
+ 
     
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const obj = {
+            name: {name},
+            email: {email},
+            text: {text},
+        }
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [text, setText] = useState("");
 
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
         method: "POST",
@@ -18,12 +31,19 @@ const ContactFooter = () => {
             throw new Error("Błąd sieci!");
           }
         })
+        .then(name => {
+            setName(name);
+            })
         .then(data => {
-          onAddCar(prevState => [...prevState, data]);
-        })
+            setEmail(email);
+            })
+        .then(data => {
+            setText(text);
+            })
         .catch(err => {
           console.error("Pojawiły się błędy - " + err.message);
         });
+    }
 
 
 return (
@@ -32,19 +52,33 @@ return (
             <div className="contact__container">
                 <div className="contact__title">Skontaktuj się z nami</div>
                 <div className="contact_decoration-box"></div>
-                <form className="contact__form">
+                <form onSubmit={handleSubmit} className="contact__form">
                     <div className="form__name-and-email__container">
                         <div className="form__name-and-email">
                             <span>Wpisz swoje imię</span><span>Wpisz swój email</span>
                         </div>
-                        <div className="form__name-and-email__inputs">  
-                            <input type="text" placeholder="Krzysztof" className="form_name" />
-                            <input type="text" placeholder="abc@xyz.pl" className="form_email"/>
+                        <div className="form__name-and-email__inputs">
+                            <input 
+                                type="text" 
+                                value={name}
+                                onChange={e => setName(e.target.value)} 
+                                placeholder="Krzysztof" 
+                                className="form_name" />
+                            <input 
+                                type="text" 
+                                value={email} 
+                                onChange={e => setEmail(e.target.value)}
+                                placeholder="abc@xyz.pl" 
+                                className="form_email"/>
                         </div>  
                     </div>
                     <div className="form__message">
                         <span>Wpisz swoją wiadomość</span>
-                        <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+                        <textarea
+                        type="text" 
+                        value={text} 
+                        onChange={e => setText(e.target.value)}
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
                     </div>
                     <div className="form__button">Wyślij</div>
                 </form>
@@ -76,7 +110,7 @@ const AddCar = ({onAddCar}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const obj = {
-      name,
+      name
       brand,
       engine: {
         type: engineType,
