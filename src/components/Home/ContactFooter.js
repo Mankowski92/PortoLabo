@@ -15,7 +15,8 @@ return (
                             <span>Wpisz swoje imię</span><span>Wpisz swój email</span>
                         </div>
                         <div className="form__name-and-email__inputs">  
-                            <input type="text" className="form_name" /><input type="text" className="form_email"/>
+                            <input type="text" placeholder="Krzysztof" className="form_name" />
+                            <input type="text" placeholder="abc@xyz.pl" className="form_email"/>
                         </div>  
                     </div>
                     <div className="form__message">
