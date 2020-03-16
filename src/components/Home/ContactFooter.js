@@ -13,7 +13,9 @@ const ContactFooter = () => {
         method: "POST",
         headers: {'Content-Type':'application/json'},
         body: {
-            // !!!!!!!!!!!BODY TO SENT HERE!!!!!!!!!!
+            "name": name.value,
+            "email": email.value,
+            "text": text.value
 
         }
       })
@@ -33,13 +35,15 @@ return (
                         </div>
                         <div className="form__name-and-email__inputs">
                             <input 
-                                type="text" 
+                                type="text"
+                                name="name" 
                                 value={name}
                                 onChange={e => setName(e.target.value)} 
                                 placeholder="Krzysztof" 
                                 className="form_name" />
                             <input 
-                                type="text" 
+                                type="text"
+                                name="email" 
                                 value={email} 
                                 onChange={e => setEmail(e.target.value)}
                                 placeholder="abc@xyz.pl" 
@@ -49,7 +53,8 @@ return (
                     <div className="form__message">
                         <span>Wpisz swoją wiadomość</span>
                         <textarea
-                        type="text" 
+                        type="text"
+                        name="text" 
                         value={text} 
                         onChange={e => setText(e.target.value)}
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
