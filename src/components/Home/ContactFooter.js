@@ -14,7 +14,7 @@ const ContactFooter = () => {
         headers: {'Content-Type':'application/json'},
         body: {
             // !!!!!!!!!!!BODY TO SENT HERE!!!!!!!!!!
-            
+
         }
       })
     }
@@ -54,7 +54,7 @@ return (
                         onChange={e => setText(e.target.value)}
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
                     </div>
-                    <div className="form__button">Wyślij</div>
+                    <div className="form__button" onClick={handleSubmit}>Wyślij</div>
                 </form>
             </div>
             <div className="contact__over">
