@@ -2,46 +2,21 @@ import React, {useState} from "react";
 
 const ContactFooter = () => {
  
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [text, setText] = useState("");
     
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const obj = {
-            name: {name},
-            email: {email},
-            text: {text},
-        }
-
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [text, setText] = useState("");
-
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
         method: "POST",
-        body: JSON.stringify(obj),
-        headers: {
-          "Content-Type": "application/json"
+        headers: {'Content-Type':'application/json'},
+        body: {
+            // !!!!!!!!!!!BODY TO SENT HERE!!!!!!!!!!
+            
         }
       })
-        .then(response => {
-          if (response.ok) {
-            return response.json();
-          } else {
-            throw new Error("Błąd sieci!");
-          }
-        })
-        .then(name => {
-            setName(name);
-            })
-        .then(data => {
-            setEmail(email);
-            })
-        .then(data => {
-            setText(text);
-            })
-        .catch(err => {
-          console.error("Pojawiły się błędy - " + err.message);
-        });
     }
 
 
@@ -98,7 +73,6 @@ return (
 }
 
 export default ContactFooter
-
 
 // import React, {useState} from "react";
 // const AddCar = ({onAddCar}) => {
@@ -169,3 +143,47 @@ export default ContactFooter
 //   );
 // };
 // export default AddCar;
+
+
+// import React, {useState, useEffect} from "react";
+// const Holidays = () => {
+//   const [data, setData] = useState(false);
+//   const [country, setCountry] = useState("PL");
+//   useEffect(() => {
+//     fetch(`https://fer-api.coderslab.pl/v1/holidays?key=e92601251-c0a2-4s63-v73f-54041195480f&country=${country}`)
+//       .then(response => {
+//         if (response.ok) {
+//           return response.json();
+//         } else {
+//           throw new Error("Błąd sieci!");
+//         }
+//       })
+//       .then(data => {
+//         setData(data.holidays);
+//       })
+//       .catch(err => {
+//         console.error("Pojawiły się błędy - " + err.message);
+//       });
+//   }, [country]);
+//   if (data === false) {
+//     return <h1>Ładuję...</h1>;
+//   }
+//   return (
+//     <div>
+//       <select value={country} onChange={(e) => setCountry(e.target.value)}>
+//         <option value="PL">Poland</option>
+//         <option value="GB">Great Britain</option>
+//         <option value="US">United States</option>
+//       </select>
+//       <ul className="list">
+//         {data.map(holiday => (
+//           <li key={holiday.uuid}>
+//             <h3 className="holiday-name">{holiday.name}</h3>
+//             <div className="holiday-date">{holiday.date}</div>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+// export default Holidays;
