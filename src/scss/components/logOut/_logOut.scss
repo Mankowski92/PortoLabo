@@ -1,8 +1,42 @@
-.log-out-container{
-    height: 75vh;
-    width: 100%;
-    background-color: blue;
-    .log-out-container__content-container{
-        
+.log-out-main-div{
+    margin-right: 7.5%;
+    .log-out-container{
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .log-out-container__content-container{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            .content-container__title{
+                color: $dark-font-color;
+                font-size: 4rem;
+                text-align: center;
+            }
+            .content-container__decoration{
+                display: flex;
+                background-image: url(../../../assets/Decoration.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 47%;
+                height: 7rem;
+            }
+            .content-container__button{
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 5rem;
+            color: $dark-font-color;
+            border: 0.75px solid $dark-font-color;
+            text-align: center;
+            width: 15rem;
+            height: 5rem;
+            margin-top: 2.2rem;
+            }
+        }
     }
 }
