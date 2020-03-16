@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, {useState} from "react";
 
 const ContactFooter = () => {
  
@@ -101,72 +100,72 @@ return (
 export default ContactFooter
 
 
-import React, {useState} from "react";
-const AddCar = ({onAddCar}) => {
-  const [name, setName] = useState("");
-  const [brand, setBrand] = useState("");
-  const [engineType, setEngineType] = useState("petrol");
-  const [hp, setHp] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const obj = {
-      name
-      brand,
-      engine: {
-        type: engineType,
-        hp
-      }
-    };
-    fetch("http://localhost:3000/cars", {
-      method: "POST",
-      body: JSON.stringify(obj),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error("Błąd sieci!");
-        }
-      })
-      .then(data => {
-        onAddCar(prevState => [...prevState, data]);
-      })
-      .catch(err => {
-        console.error("Pojawiły się błędy - " + err.message);
-      });
-  };
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={name}
-        onChange={e => setName(e.target.value)}
-        placeholder="Wpisz model auta"/>
-      <input
-        type="text"
-        value={brand}
-        onChange={e => setBrand(e.target.value)}
-        placeholder="Wpisz markę auta"/>
-      <select
-        value={engineType}
-        onChange={e => setEngineType(e.target.value)}>
-        <option value="petrol">BENZYNA</option>
-        <option value="diesel">ROPA</option>
-        <option value="electric">PRUND</option>
-        <option value="hybrid">HYBRYDA</option>
-        <option value="lpg">LPG</option>
-        <option value="hydrogen">WODÓR</option>
-      </select>
-      <input
-        type="number"
-        value={hp}
-        onChange={e => setHp(e.target.value)}
-        placeholder="Wpisz ilość koni mechanicznych"/>
-      <button>Dodaj auto</button>
-    </form>
-  );
-};
-export default AddCar;
+// import React, {useState} from "react";
+// const AddCar = ({onAddCar}) => {
+//   const [name, setName] = useState("");
+//   const [brand, setBrand] = useState("");
+//   const [engineType, setEngineType] = useState("petrol");
+//   const [hp, setHp] = useState("");
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const obj = {
+//       name
+//       brand,
+//       engine: {
+//         type: engineType,
+//         hp
+//       }
+//     };
+//     fetch("http://localhost:3000/cars", {
+//       method: "POST",
+//       body: JSON.stringify(obj),
+//       headers: {
+//         "Content-Type": "application/json"
+//       }
+//     })
+//       .then(response => {
+//         if (response.ok) {
+//           return response.json();
+//         } else {
+//           throw new Error("Błąd sieci!");
+//         }
+//       })
+//       .then(data => {
+//         onAddCar(prevState => [...prevState, data]);
+//       })
+//       .catch(err => {
+//         console.error("Pojawiły się błędy - " + err.message);
+//       });
+//   };
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input
+//         type="text"
+//         value={name}
+//         onChange={e => setName(e.target.value)}
+//         placeholder="Wpisz model auta"/>
+//       <input
+//         type="text"
+//         value={brand}
+//         onChange={e => setBrand(e.target.value)}
+//         placeholder="Wpisz markę auta"/>
+//       <select
+//         value={engineType}
+//         onChange={e => setEngineType(e.target.value)}>
+//         <option value="petrol">BENZYNA</option>
+//         <option value="diesel">ROPA</option>
+//         <option value="electric">PRUND</option>
+//         <option value="hybrid">HYBRYDA</option>
+//         <option value="lpg">LPG</option>
+//         <option value="hydrogen">WODÓR</option>
+//       </select>
+//       <input
+//         type="number"
+//         value={hp}
+//         onChange={e => setHp(e.target.value)}
+//         placeholder="Wpisz ilość koni mechanicznych"/>
+//       <button>Dodaj auto</button>
+//     </form>
+//   );
+// };
+// export default AddCar;
