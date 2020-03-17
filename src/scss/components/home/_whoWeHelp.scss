@@ -52,3 +52,8 @@
 .who-we-help__middle_entiti_div{
     padding: 0 5rem;
 }
+
+.btn-fund::active{
+    border: 3px solid black;
+    padding: 1rem;
+}
