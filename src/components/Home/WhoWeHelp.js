@@ -12,6 +12,16 @@ const handleFund = (e) => {
     setFundation(e.target.id)
 }
 
+const handleOrg = (e) => {
+    console.log(e.target.id)
+    setFundation(e.target.id)
+}
+
+const handleLocal = (e) => {
+    console.log(e.target.id)
+    setFundation(e.target.id)
+}
+
 return (
     <>
         <div className="who-we-help-container" id="fundation">
@@ -26,11 +36,11 @@ return (
                 <div 
                 className={classnames("btn-fund", {active: fundation==2})}
                 id="2"
-                onClick={handleFund}>Organizacjom</div>
+                onClick={handleOrg}>Organizacjom</div>
                 <div 
                 className={classnames("btn-fund", {active: fundation==3})}
                 id="3"
-                onClick={handleFund}>Local</div>
+                onClick={handleLocal}>Local</div>
             </div>
             <div className="who-we-help__text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</div>
             <div className="who-we-help__main-content">
