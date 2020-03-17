@@ -1,9 +1,18 @@
 import React, {useState, useEffect} from "react";
 
 
-const WhoList = () => {
+const WhoList = ({ fundation }) => {
 
     const [data, setData] = useState(false);
+    const [filter, setFilter] =useState([])
+
+    useEffect(() => {
+      if (data) {
+        setFilter(data[0][fundation])
+        console.log(filter)         //////////TUATAJ GRZEBAŁ PAWEŁ
+      }
+      
+      }, [fundation])
 
     useEffect(() => {
         fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247/6/`,

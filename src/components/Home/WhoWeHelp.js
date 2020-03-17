@@ -1,16 +1,20 @@
 import WhoList from "./WhoList";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import classnames from 'classnames'
 
 const WhoWeHelp = () => {
 
-const [fundation, setFundation] = useState(1);
+const [fundation, setFundation] = useState('fundations');
 
 
 const handleFund = (e) => {
     console.log(e.target.id)
     setFundation(e.target.id)
 }
+
+// if btn-fund = active {
+//     console.log("dupa")
+// }
 
 return (
     <>
@@ -20,21 +24,21 @@ return (
             <div className="who-we-help__entities">
 
                 <div 
-                className={classnames("btn-fund", {active: fundation==1})}
-                id="1"
+                className={classnames("btn-fund" , {active: fundation==1})}
+                id="foundations"
                 onClick={handleFund}>Fundacjom</div>
                 <div 
                 className={classnames("btn-fund", {active: fundation==2})}
-                id="2"
+                id="organisations"
                 onClick={handleFund}>Organizacjom</div>
                 <div 
                 className={classnames("btn-fund", {active: fundation==3})}
-                id="3"
+                id="local"
                 onClick={handleFund}>Local</div>
             </div>
             <div className="who-we-help__text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</div>
             <div className="who-we-help__main-content">
-                <WhoList />
+                <WhoList fundation={fundation} />
             </div>
         </div>
     </>

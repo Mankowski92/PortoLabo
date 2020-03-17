@@ -12,11 +12,18 @@ const ContactFooter = () => {
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
         method: "POST",
         headers: {'Content-Type':'application/json'},
-        body: {
-            "name": name.value,
-            "email": email.value,
-            "text": text.value
-        }
+        body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+            text: text.value
+        })
+      })
+      .then(res => res.json())
+      .then(res => {
+          if (res.status==="error") {                            //////////TUATAJ GRZEBAŁ PAWEŁ
+              const error = res.errors.map(err => err.msg)
+              console.warn(error)
+          }
       })
     }
 
@@ -58,7 +65,7 @@ return (
                         onChange={e => setText(e.target.value)}
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
                     </div>
-                    <div className="form__button" type="submit" onClick={handleSubmit}>Wyślij</div>
+                    <button className="form__button" type="submit">Wyślij</button>
                 </form>
             </div>
             <div className="contact__over">
