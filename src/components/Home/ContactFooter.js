@@ -73,6 +73,11 @@ return (
                     <div className="footer__copyright">Copyright by Coders Lab</div>
                     <div className="footer__socials">
                         <div className="footer__socials__facebook"></div>
+
+                        {/*It could be problematic to add hrefs to empty div with backgroud added as class}
+                        more handy solution will be to add socials as font awesome or <img></img> 
+                        I should change it asap */}
+
                         <div className="footer__socials__instagram"></div>
                     </div>
                 </div>
