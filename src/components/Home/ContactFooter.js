@@ -27,7 +27,6 @@ const ContactFooter = () => {
       })
     }
 
-
 return (
     <>
         <div className="contact-footer-container" id="contact">
