@@ -12,9 +12,6 @@ const handleFund = (e) => {
     setFundation(e.target.id)
 }
 
-// if btn-fund = active {
-//     console.log("dupa")
-// }
 
 return (
     <>

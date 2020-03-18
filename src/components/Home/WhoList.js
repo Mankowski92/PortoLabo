@@ -9,7 +9,7 @@ const WhoList = ({ fundation }) => {
     useEffect(() => {
       if (data) {
         setFilter(data[0][fundation])
-        console.log(filter)         //////////TUATAJ GRZEBAŁ PAWEŁ
+        console.log(filter)         //////////MODS HERE
       }
       
       }, [fundation])
