@@ -4,7 +4,7 @@ import classnames from 'classnames'
 
 const WhoWeHelp = () => {
 
-const [fundation, setFundation] = useState('fundations');
+const [fundation, setFundation] = useState('local');
 
 const handleFund = (e) => {
     console.log(e.target.id)

@@ -7,9 +7,11 @@ const WhoList = ({ fundation }) => {
 
     useEffect(() => {
       if (data) {
-        setFilter(data[0][fundation])
-        console.log(filter)         //////////MODS HERE
+        setFilter(data.foundations)
+        console.log(filter)      //////////MODS HERE
       }}, [fundation])
+      
+      
 
     useEffect(() => {
         fetch(`https://api.jsonbin.io/b/5e69461fe835bb6a77a18247/7`,
@@ -41,7 +43,7 @@ const WhoList = ({ fundation }) => {
   return (
     <div className="entity-container">
       <div className="entity-name-and-description">
-    <div className="entity-name-and-description__name">{data.foundations[0].name}</div>
+    <div className="entity-name-and-description__name"> {data.foundations[0].name}</div>
         <div className="entity-name-and-description__description">{data.foundations[0].description}</div>
       </div>
     <div className="entity-additional-info">{data.foundations[0].status}</div>
