@@ -33,7 +33,6 @@ const WhoList = ({ fundation }) => {
           .then(data => {
             console.log(data)
             setData(data);
-
           })
           .catch(err => {
             console.error("Pojawiły się błędy - " + err.message);
@@ -46,10 +45,10 @@ const WhoList = ({ fundation }) => {
   return (
     <div className="entity-container">
       <div className="entity-name-and-description">
-        <div className="entity-name-and-description__name">{/*path to name here*/}</div>
-        <div className="entity-name-and-description__description">{/*path to description here*/}</div>
+  <div className="entity-name-and-description__name">{data.foundations[0].name}</div>
+        <div className="entity-name-and-description__description">{data.foundations[0].description}</div>
       </div>
-  <div className="entity-additional-info">{/*path to status here*/}</div>
+  <div className="entity-additional-info">{data.foundations[0].status}</div>
     </div>  
   )
 }
