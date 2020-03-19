@@ -6,12 +6,10 @@ const WhoWeHelp = () => {
 
 const [fundation, setFundation] = useState('fundations');
 
-
 const handleFund = (e) => {
     console.log(e.target.id)
     setFundation(e.target.id)
 }
-
 
 return (
     <>
