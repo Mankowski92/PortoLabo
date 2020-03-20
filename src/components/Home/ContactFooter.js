@@ -4,7 +4,7 @@ const ContactFooter = () => {
  
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [text, setText] = useState("");
+    const [message, setMessage] = useState("");
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,15 +42,15 @@ return (
                             <input 
                                 type="text"
                                 name="name" 
-                                value={name}
                                 onChange={e => setName(e.target.value)} 
+                                value={name}
                                 placeholder="Krzysztof" 
                                 className="form_name" />
                             <input 
                                 type="email"
                                 name="email" 
-                                value={email} 
                                 onChange={e => setEmail(e.target.value)}
+                                value={email} 
                                 placeholder="abc@xyz.pl" 
                                 className="form_email"/>
                         </div>  
@@ -60,8 +60,8 @@ return (
                         <textarea
                         type="text"
                         name="text" 
-                        value={text} 
-                        onChange={e => setText(e.target.value)}
+                        onChange={e => setMessage(e.target.value)}
+                        value={message} 
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
                     </div>
                     <button className="form__button" type="submit">Wyślij</button>
