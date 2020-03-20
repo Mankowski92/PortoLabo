@@ -1,78 +1,78 @@
-.four-steps{
+.four-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  .four-steps__title {
+    color: $dark-font-color;
+    font-size: 3.8rem;
+    letter-spacing: -0.76px;
+    margin-top: 5.5rem;
+  }
+  .four-steps__decorationbox {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+    background-image: url(../../../assets/Decoration.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22rem;
+    height: 4rem;
+    margin: 3rem 0;
+  }
+  .four-steps__background-for-step-by-step {
+    background-color: #f0f1f1;
     width: 100%;
-    .four-steps__title{
-        color: $dark-font-color;
-        font-size: 3.8rem;
-        letter-spacing: -0.76px;
-        margin-top: 5.5rem;
-    }
-    .four-steps__decorationbox{
+    .four-steps__step-by-step-container {
+      color: $dark-font-color;
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 20%;
+      .step-by-step-container__each-step-container {
         display: flex;
-        background-image: url(../../../assets/Decoration.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 22rem;
-        height: 4rem;
-        margin: 3rem 0;
-    }
-    .four-steps__background-for-step-by-step{
-        background-color: #F0F1F1;
-        width: 100%;
-        .four-steps__step-by-step-container{
-            color: $dark-font-color;
-            font-size: 1.8rem;
-            display: flex;
-            justify-content: space-around;
-            margin: 0 20%;
-            .step-by-step-container__each-step-container{
-                display: flex;
-                text-align: center;
-                align-items: center;
-                flex-direction: column;
-                margin: 7.5rem 4rem;
-                .each-step-container__graphic--graph1{
-                    background-image: url(../../../assets/Icon-1.svg);
-
-                }
-                .each-step-container__graphic--graph2{
-                    background-image: url(../../../assets/Icon-2.svg);
-                }
-                .each-step-container__graphic--graph3{
-                    background-image: url(../../../assets/Icon-3.svg);
-                }
-                .each-step-container__graphic--graph4{
-                    background-image: url(../../../assets/Icon-4.svg);
-                }
-                .each-step-container__graphic{
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    height: 8rem;
-                    width: 8rem;
-                }.each-step-container__action-title{
-                    padding: 10px;
-                    border-bottom: 1px solid #707070;
-                }
-                .each-step-container__action-description{
-                    margin-top: 1rem;
-                }
-            }
-        }
-    }
-    .four-steps__button{
-        font-size: 3.6rem;
-        font-weight: 300;
-        color: $dark-font-color;
-        border: 0.75px solid $dark-font-color;
         text-align: center;
-        width: 30rem;
-        margin: 4.5rem 0 7rem 0;
-        span{
-            display: block;
+        align-items: center;
+        flex-direction: column;
+        margin: 7.5rem 4rem;
+        .each-step-container__graphic--graph1 {
+          background-image: url(../../../assets/Icon-1.svg);
         }
+        .each-step-container__graphic--graph2 {
+          background-image: url(../../../assets/Icon-2.svg);
+        }
+        .each-step-container__graphic--graph3 {
+          background-image: url(../../../assets/Icon-3.svg);
+        }
+        .each-step-container__graphic--graph4 {
+          background-image: url(../../../assets/Icon-4.svg);
+        }
+        .each-step-container__graphic {
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 8rem;
+          width: 8rem;
+        }
+        .each-step-container__action-title {
+          padding: 10px;
+          border-bottom: 1px solid #707070;
+        }
+        .each-step-container__action-description {
+          margin-top: 1rem;
+        }
+      }
     }
+  }
+  .four-steps__button {
+    font-size: 3.6rem;
+    font-weight: 300;
+    color: $dark-font-color;
+    border: 0.75px solid $dark-font-color;
+    text-align: center;
+    width: 30rem;
+    margin: 4.5rem 0 7rem 0;
+    span {
+      display: block;
+    }
+  }
 }
