@@ -9,14 +9,16 @@ const ContactFooter = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        const obj = {
+            name,
+            email,
+            message
+            };
+
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
         method: "POST",
+        body: JSON.stringify(obj),
         headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({
-            name: name.value,
-            email: email.value,     ///////Problem with body 
-            message: message.value 
-        })
       })
       .then(res => res.json())
       .then(res => {
@@ -41,14 +43,12 @@ return (
                         <div className="form__name-and-email__inputs">
                             <input 
                                 type="text"
-                                name="name" 
                                 onChange={e => setName(e.target.value)} 
                                 value={name}
                                 placeholder="Krzysztof" 
                                 className="form_name" />
                             <input 
                                 type="email"
-                                name="email" 
                                 onChange={e => setEmail(e.target.value)}
                                 value={email} 
                                 placeholder="abc@xyz.pl" 
@@ -58,8 +58,7 @@ return (
                     <div className="form__message">
                         <span>Wpisz swoją wiadomość</span>
                         <textarea
-                        type="text"
-                        name="text" 
+                        type="text" 
                         onChange={e => setMessage(e.target.value)}
                         value={message} 
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
@@ -88,3 +87,4 @@ return (
 }
 
 export default ContactFooter
+
