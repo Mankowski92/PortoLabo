@@ -1,3 +1,3 @@
-import SingIn from './SingIn';
+import SingIn from './SingIn'
 
-export default SingIn;
+export default SingIn
