@@ -13,9 +13,9 @@ const ContactFooter = () => {
         method: "POST",
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
-            name: {name},
-            email: {email},     ///////Problem with body 
-            message: {text}
+            name: name.value,
+            email: email.value,     ///////Problem with body 
+            message: message.value 
         })
       })
       .then(res => res.json())
