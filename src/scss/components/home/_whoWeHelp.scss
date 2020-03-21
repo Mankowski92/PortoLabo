@@ -1,59 +1,59 @@
-.who-we-help-container{
-    width: 70%;
-    margin: 7rem auto;
+.who-we-help-container {
+  width: 70%;
+  margin: 7rem auto;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+
+  .who-we-help__title {
+    color: $dark-font-color;
+    font-size: 3.8rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.76px;
+    text-align: center;
+  }
+  .who-we-help__decoration {
+    background-image: url(../../../assets/Decoration.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    margin: 3% auto 3% auto;
+  }
+  .who-we-help__entities {
     display: flex;
-    flex-direction: column;
-    height: 70vh;
-
-    .who-we-help__title{
-        color: $dark-font-color;
-        font-size: 3.8rem;
-        line-height: 5.5rem;
-        letter-spacing: -0.76px;
-        text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2.4rem;
+    color: $dark-font-color;
+    margin: 0 20% 6rem 20%;
+    div {
+      width: 25rem;
+      text-align: center;
+      margin: auto auto;
     }
-    .who-we-help__decoration{
-        background-image: url(../../../assets/Decoration.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 20%;
-        height: 20%;
-        margin: 3% auto 3% auto;
-    }
-    .who-we-help__entities{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 2.4rem;
-        color: $dark-font-color;
-        margin: 0 20% 6rem 20%;
-        div{
-            width: 25rem;
-            text-align: center;
-            margin: auto auto;
-        }
-    }
-    .who-we-help__text{
-        width: 50%;
-        font-size: 2.2rem;
-        color: $dark-font-color;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .who-we-help__main-content{
-        text-align: center;
-        font-size: 2.8rem;
-        margin-top: 6rem;
-    }
+  }
+  .who-we-help__text {
+    width: 50%;
+    font-size: 2.2rem;
+    color: $dark-font-color;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .who-we-help__main-content {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 6rem;
+  }
 }
 
-.who-we-help__middle_entiti_div{
-    padding: 0 5rem;
+.who-we-help__middle_entiti_div {
+  padding: 0 5rem;
 }
 
-.btn-fund::active{
-    border: 3px solid black;
-    padding: 1rem;
+.btn-fund::active {
+  border: 3px solid black;
+  padding: 1rem;
 }
