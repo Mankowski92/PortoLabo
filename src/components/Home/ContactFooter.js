@@ -21,11 +21,11 @@ const ContactFooter = () => {
     })
       .then(res => res.json())
       .then(res => {
-        if (res.status === "error") {
-          //////////MODS HERE
-          const error = res.errors.map(err => err.msg);
-          console.warn(error);
-        }
+        if (res.status === "success") {
+          console.log("OK!");
+        } else {
+            console.log("NOT OK AT ALL")
+            }
       });
   };
 
