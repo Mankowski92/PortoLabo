@@ -1,36 +1,35 @@
-
-.Navigation-component-container{
+.Navigation-component-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-start;
+  .header__login-nav-container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-start;
-    .header__login-nav-container{
-        display: flex;
-        flex-direction: column;
-        margin-top: 4.5rem;
-        margin-left: 10.8%;
-        font-size: 1.8rem;
-        .header__login-section{
-            display: flex;
-            justify-content: flex-end;
-            color: #737373;
-                a{
-                    padding: 10px;
-                }
-                .login-section__button--make-account{
-                    margin-left: 1rem;
-                    border: 1px solid #FAD648;
-                    padding: 10px
-                }
-        }
-        .header__nav{
-            display: flex;
-            justify-content: space-between;
-            color: #3C3C3C;
-            margin-top: 2.6rem;
-            a{
-                padding-left: 4.8rem;
-            }
-        }
+    flex-direction: column;
+    margin-top: 4.5rem;
+    margin-left: 10.8%;
+    font-size: 1.8rem;
+    .header__login-section {
+      display: flex;
+      justify-content: flex-end;
+      color: #737373;
+      a {
+        padding: 10px;
+      }
+      .login-section__button--make-account {
+        margin-left: 1rem;
+        border: 1px solid #fad648;
+        padding: 10px;
+      }
     }
-}       
+    .header__nav {
+      display: flex;
+      justify-content: space-between;
+      color: #3c3c3c;
+      margin-top: 2.6rem;
+      a {
+        padding-left: 4.8rem;
+      }
+    }
+  }
+}

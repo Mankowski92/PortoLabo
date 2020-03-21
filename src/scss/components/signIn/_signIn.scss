@@ -1,72 +1,71 @@
 @import "../../mixins";
 
-.sing-up-container{
-    margin-right: 7.5%;
-    .sing-up-container__login-section{
-        margin-top: 12rem;
-        display: flex;
-        flex-direction: column;
-        margin-left: 42.5%;
-        width: 30%;
-        text-align: center;
+.sing-up-container {
+  margin-right: 7.5%;
+  .sing-up-container__login-section {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 42.5%;
+    width: 30%;
+    text-align: center;
 
-        .sing-up-section__login-text{
-            font-size: 4rem;
-            letter-spacing: -0.8px;
-            line-height: 5.5rem;
-            color: #3C3C3C;
-        }
-        .sing-up-section__decoration-box{
-            display: flex;
-            align-self: center;
-            background-image: url(../../../assets/Decoration.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            width: 25rem;
-            height: 10rem;
-        }
-        .sing-up-section__email-password-container{
-            background-color: #F0F1F1;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            width: 70%;
-            height: 30rem;
-            font-size: 1.6rem;
-            color: #3C3C3C;
-            .sing-up__email-password-container__email{
-                color: #3C3C3C;
-                margin: 4rem 6rem 0 6rem;
-                padding-bottom: 3rem;
-                border-bottom: 1px solid black;
-            }
-            .sing-up__email-password-container__password{
-                margin: 3rem 6rem 0 6rem;
-                padding-bottom: 3rem;
-                border-bottom: 1px solid black;
-            }
-            .sing-up__email-password-container__password-repeat{
-                margin: 3rem 6rem 0 6rem;
-                padding-bottom: 3rem;
-                border-bottom: 1px solid black;
-            }
-        }
-        .sing-up-section__buttons-section{
-            display: flex;
-            justify-content: space-between;
-            span{
-                padding: 10px;
-                margin-top: 4.5rem;
-                font-size: 18px;
-                line-height: 32px;
-                font-weight: 300;
-            }
-        }
+    .sing-up-section__login-text {
+      font-size: 4rem;
+      letter-spacing: -0.8px;
+      line-height: 5.5rem;
+      color: #3c3c3c;
     }
-}    
-
+    .sing-up-section__decoration-box {
+      display: flex;
+      align-self: center;
+      background-image: url(../../../assets/Decoration.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 25rem;
+      height: 10rem;
+    }
+    .sing-up-section__email-password-container {
+      background-color: #f0f1f1;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 70%;
+      height: 30rem;
+      font-size: 1.6rem;
+      color: #3c3c3c;
+      .sing-up__email-password-container__email {
+        color: #3c3c3c;
+        margin: 4rem 6rem 0 6rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid black;
+      }
+      .sing-up__email-password-container__password {
+        margin: 3rem 6rem 0 6rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid black;
+      }
+      .sing-up__email-password-container__password-repeat {
+        margin: 3rem 6rem 0 6rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid black;
+      }
+    }
+    .sing-up-section__buttons-section {
+      display: flex;
+      justify-content: space-between;
+      span {
+        padding: 10px;
+        margin-top: 4.5rem;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 300;
+      }
+    }
+  }
+}
 
 // background-repeat: no-repeat;
 //     background-position: center;
