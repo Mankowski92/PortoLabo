@@ -24,8 +24,8 @@ const ContactFooter = () => {
         if (res.status === "success") {
           console.log("OK!");
         } else {
-            console.log("NOT OK AT ALL")
-            }
+          console.log("VERY NOT OK");
+        }
       });
   };
 
