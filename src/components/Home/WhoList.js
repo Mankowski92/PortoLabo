@@ -7,7 +7,7 @@ const WhoList = ({ fundation }) => {
   useEffect(() => {
     if (data) {
       setFilter(data.foundations);
-      console.log(filter); //////////MODS HERE
+      // console.log(filter); //////////MODS HERE
     }
   }, [fundation]);
 
