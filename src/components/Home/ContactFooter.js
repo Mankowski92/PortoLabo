@@ -19,12 +19,13 @@ const ContactFooter = () => {
       body: JSON.stringify(obj),
       headers: { "Content-Type": "application/json" }
     })
-      .then(res => res.json())
-      .then(res => {
-        if (res.status === "success") {
-          console.log("OK!");
+      .then(response => response.json())
+      .then(response => {
+        if (response.status === "success") {
+          console.log("Data verification has been successful. The message has been sent.");
         } else {
-          console.log("VERY NOT OK");
+          const error = response.errors.map(err => err.msg);
+          console.warn(error);
         }
       });
   };
