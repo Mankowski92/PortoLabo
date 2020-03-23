@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Msg from "./OkMessage"
 
 const ContactFooter = () => {
   const [name, setName] = useState("");
@@ -14,6 +15,13 @@ const ContactFooter = () => {
       message
     };
 
+
+    // console.log("dupa")
+    // return (   /////to work on rendering component
+    //   <Msg />
+    // )
+    
+
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
       method: "POST",
       body: JSON.stringify(obj),
@@ -27,7 +35,7 @@ const ContactFooter = () => {
           const error = response.errors.map(err => err.msg);
           console.warn(error);
         }
-      });
+      })
   };
 
   return (
