@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import Msg from "./OkMessage"
+import Answer from "./OkAnswer"
 
 const ContactFooter = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [answer, setAnswer] = useState(false);
+
+  const handleAnswer = () => { //////handleAnswer need to be add on response from server
+    setAnswer(true)
+  }
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -14,14 +19,7 @@ const ContactFooter = () => {
       email,
       message
     };
-
-
-    // console.log("dupa")
-    // return (   /////to work on rendering component
-    //   <Msg />
-    // )
     
-
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
       method: "POST",
       body: JSON.stringify(obj),
